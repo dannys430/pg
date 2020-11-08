@@ -152,6 +152,10 @@ p {
   padding: 0;
 }
 
+.products-header {
+  display: none;
+}
+
 .product {
   width: 25vw;
   /* padding: 20px; */
@@ -340,6 +344,13 @@ p {
     padding-right: unset;
   }
 
+  .products-header {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
   .product {
     width: unset;
   }
@@ -363,6 +374,21 @@ p {
 
   #info-5 {
     background-image: url(/assets/images/mobile/new-to-public-goods_mobile.jpg);
+    height: 700px;
+    justify-content: unset;
+    text-align: center;
+  }
+
+  .info-5-description {
+    padding-bottom: 350px;
+  }
+
+  .info-5-img {
+    display: none;
+  }
+
+  .shop-now {
+    display: none;
   }
 
 }
