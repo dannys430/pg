@@ -6,10 +6,15 @@ p {
   font-size: 20px;
 }
 
+#section-2 {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
 #info-1 {
   background-image: url(/assets/images/desktop/menstraul-hero_desktop.jpg);
-  height: 500px;
+  height: 400px;
   background-size: cover;
   background-position: 50%;
 }
@@ -20,7 +25,7 @@ p {
 }
 
 #info-1-intro > h1 {
-  padding-top: 100px;
+  padding-top: 50px;
   font-size: 20px;
   font-weight: 700;
 }
@@ -47,24 +52,111 @@ p {
 
 #info-2 {
   background-image: url(/assets/images/desktop/bamboo_desktop.jpg);
-  height: 500px;
+  height: 400px;
   background-size: cover;
   background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
+
+#info-2-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  text-align: center;
+  color: white;
+}
+
+.info-2-title {
+  width: 400px;
+}
+
+.info-2-description {
+  padding-top: 20px;
+  width: 500px;
+}
+
+
+
+
+
 
 #info-3 {
-  background-image: url(/assets/images/desktop/pad_detail_desktop.jpg);
-  height: 500px;
-  background-size: cover;
-  background-position: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
-#info-4 {
-  background-image: url(/assets/images/desktop/pad_in_hand_desktop.jpg);
-  height: 500px;
+#info-3-content-1 {
+  background-image: url(/assets/images/desktop/pad_detail_desktop.jpg);
+  height: 420px;
   background-size: cover;
   background-position: 50%;
+  width: 50vw;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
 }
+
+.info-3-title-1 {
+  width: 190px;
+}
+
+.info-3-description-1 {
+  padding-top: 20px;
+  width: 300px;
+}
+
+#info-3-content-2 {
+  background-image: url(/assets/images/desktop/pad_in_hand_desktop.jpg);
+  height: 420px;
+  background-size: cover;
+  background-position: 50%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.info-3-title-2 {
+  width: 190px;
+}
+
+.info-3-description-2 {
+  padding-top: 15px;
+  width: 250px;
+}
+
+.info-3-description-2 > p {
+  padding-top: 15px;
+}
+
+
+#info-4 {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+}
+
+.product {
+  height: 250px;
+  width: 250px;
+  background-color: black;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 700px) {
   #info-1 {
