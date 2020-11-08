@@ -1,0 +1,87 @@
+h1 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+#info-1 {
+  background-image: url(/assets/images/desktop/menstraul-hero_desktop.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+#info-1-content {
+  width: 300px;
+  margin: 5%;
+}
+
+#info-1-intro > h1 {
+  padding-top: 100px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#info-1-title {
+  padding-top: 20px
+}
+
+#info-1-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#info-1-button {
+  height: 20px;
+  width: 100px;
+  background-color: rgb(242, 137, 107);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+#info-2 {
+  background-image: url(/assets/images/desktop/bamboo_desktop.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+#info-3 {
+  background-image: url(/assets/images/desktop/pad_detail_desktop.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+#info-4 {
+  background-image: url(/assets/images/desktop/pad_in_hand_desktop.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+@media (max-width: 700px) {
+  #info-1 {
+    background-image: url(/assets/images/mobile/menstrual-hero_mobile.jpg);
+  }
+
+  #info-2 {
+    background-image: url(/assets/images/mobile/bamboo_mobile.jpg);
+  }
+
+  #info-3 {
+    background-image: url(/assets/images/mobile/pad_detail_mobile.jpg);
+  }
+
+  #info-4 {
+    background-image: url(/assets/images/mobile/pad_in_hand_mobile.jpg);
+  }
+
+}
+
