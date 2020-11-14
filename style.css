@@ -393,3 +393,34 @@ p {
 
 }
 
+
+#popup {
+  background-color: orange;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#popup > h1 {
+  color: white;
+}
+
+#popup > p {
+  color: white;
+  padding: 30px;
+}
+
+#popup > a {
+  background-color: white;
+  color: orange;
+  padding: 10px;
+}
+
+
+
+
+
