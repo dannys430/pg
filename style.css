@@ -394,33 +394,79 @@ p {
 }
 
 
-#popup {
-  background-color: orange;
-  height: 300px;
-  width: 400px;
+
+/* POPUP MODAL */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+#modal {
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  left: 40%;
+  z-index: 100;
+  background: orange;
+  width: 600px;
+  max-width: 70%;
+  transform: translate(0) scale(0);
+  transform: translateY(500px);
+	transition-duration: .5s;
+}
+
+#modal.active {
+  transform: translate(0) scale(1);
+}
+
+#modal.hidden {
+  display: none;
+}
+
+.modal-header {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
 }
 
-#popup > h1 {
-  color: white;
+.modal-header .title {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-#popup > p {
-  color: white;
-  padding: 30px;
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-#popup > a {
+.modal-body {
+  padding: 20px;
+}
+
+.claim-button {
+  padding: 20px;
   background-color: white;
   color: orange;
-  padding: 10px;
 }
 
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
 
-
-
-
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
